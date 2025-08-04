@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# IDE/editor configs
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Audio cache, logs, etc.
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Modelos e dados grandes
+models/*.pt
+data/raw/*.mp4
+annotated_frames/
+
+# Configs pessoais
+*.env

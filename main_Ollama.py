@@ -60,12 +60,12 @@ def process_command(command):
         from datetime import datetime
         now = datetime.now()
         speak(f"Agora são {now.hour} e {now.minute} minutos.")
-    if "pesquisar por" in command:
+    elif "pesquisar por" in command:
         search_term = command.replace("pesquisar por", "").strip()
         url = f"https://www.google.com/search?q={search_term}"
         speak(f"Pesquisando por {search_term}")
         webbrowser.open(url)
-    if "notícias de hoje" in command:
+    elif "notícias de hoje" in command:
         speak("Abrindo as últimas notícias")
         webbrowser.open("https://news.google.com/")
     elif "sair" in command:
@@ -81,7 +81,7 @@ def process_command(command):
 
       
 def main():
-    speak("Olá! Eu sou Cortana, como posso ajudar ?")
+    speak("Olá!, como posso ajudar ?")
     while True:
         command = listen()
         if command:
